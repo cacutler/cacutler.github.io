@@ -111,13 +111,7 @@ form.addEventListener('submit', async function(e) {
   e.preventDefault();
   const formData = new FormData(form);
   try {
-    const response = await fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
+    const response = await fetch(form.action, {method: 'POST', body: formData, headers: {'Accept': 'application/json'}});
     if (response.ok) {
       alert('Thank you! Your message has been sent.');
       form.reset();
