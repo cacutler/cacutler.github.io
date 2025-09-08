@@ -107,3 +107,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      alert('Thank you! Your message has been sent.');
+      form.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    alert('Sorry, there was an error. Please try again.');
+  }
+});
