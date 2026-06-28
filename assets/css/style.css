@@ -1067,6 +1067,11 @@ textarea.form-input::-webkit-resizer {
 .form-btn:disabled:hover::before {
   background: var(--bg-gradient-jet);
 }
+.timeline-item-points {
+  list-style: disc;
+  margin-left: 1rem;
+  color: var(--light-gray);;
+}
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
