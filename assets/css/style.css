@@ -1072,6 +1072,9 @@ textarea.form-input::-webkit-resizer {
   margin-left: 1rem;
   color: var(--light-gray);;
 }
+.timeline-item-points b {
+  color: var(--light-gray);
+}
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
