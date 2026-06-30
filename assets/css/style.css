@@ -1583,7 +1583,6 @@ textarea.form-input::-webkit-resizer {
     width: 150px;
   }
   .info-content .name {
-    white-space: nowrap;
     text-align: center;
   }
   .info-content .title {
@@ -1600,7 +1599,6 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr;
   }
   .contact-info :is(.contact-link) {
-    white-space: wrap;
     overflow: visible;
     text-overflow: ellipsis;
   }
