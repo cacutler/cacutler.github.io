@@ -502,6 +502,7 @@ main {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-top: 2rem;
 }
 /**
  * #testimonials-modal
